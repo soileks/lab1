@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru-ru">
+<head>
+    <meta charset="UTF-8">
+    <script>
+      
+        function s() {
+           let res = document.getElementById("text").value;
+            new Function(res)();
+            
+        }
+    
+    </script>
+    
+</head>
+<body>
+    <form id="form">
+    <p> Введите код </p>
+    <textarea id="text" rows="5" cols="25" name="codeJS">
+    Код на JS или текст
+    </textarea>
+
+    <button id="begin" onclick="s()">Выполнить код</button>
+    
+    </form>
+
+</body>
+</html>
